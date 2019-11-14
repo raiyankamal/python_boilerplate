@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  python_boilerplate:
+    build: .
+    command: sh -c "pytest test_foo.py"
+    container_name: python_boilerplate
+    volumes:
+      - ./src:/application
